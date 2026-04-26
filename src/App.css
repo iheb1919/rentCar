@@ -1,0 +1,273 @@
+
+input[type="password"], input[type="email"], input[type="text"], input[type="file"], textarea {
+    max-width: 100%;
+    margin-bottom: 15px;
+    padding: 18.5px 20px;
+    height: auto;
+    background-color: #222;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    display: block;
+    width: 100%;
+    line-height: 1.5em;
+    font-family: 'Outfit', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    color: #999;
+    background-image: none;
+    border: none;
+    border-radius: 30px;
+}
+.dark input[type="password"], .dark input[type="email"], input[type="text"], input[type="file"], textarea 
+{
+    background-color: #fff; 
+    color: #555;
+}
+input[type="submit"] {
+    display: inline-block;
+    height: auto;
+    padding: 19px 35px;
+    border: none;
+    border-radius: 0;
+    background-color: #f5b754;
+    -webkit-transition: border-color 400ms ease, color 400ms ease, background-color 400ms ease;
+    transition: border-color 400ms ease, color 400ms ease, background-color 400ms ease;
+    color: #1b1b1b;
+    line-height: 20px;
+    font-weight: 300;
+    text-align: center;
+    font-size: 14px;
+    border-radius: 30px;
+}
+[type=submit]:not(:disabled), button:not(:disabled) {
+    cursor: pointer;
+}
+.firstNav > li > ul {
+    top: 100% !important;
+    left:20%
+}
+.firstNav > li:last-child > ul {
+    top: 100% !important;
+    right:0%;
+    left:unset;
+}
+.firstNav > li > ul.rr {
+    top: 10% !important;
+    right:0%;
+}
+.submenu > li {
+transition: translate .5s ease;
+}
+.light .submenu > li {
+    color: #333;
+}
+.submenu > li:hover {
+    translate:5px
+}
+.slide-in {
+    animation: slide-in 0.5s forwards;
+    -webkit-animation: slide-in 0.5s forwards;
+}
+.slide-out {
+    animation: slide-out 0.5s forwards;
+    -webkit-animation: slide-out 0.5s forwards;
+}
+@keyframes slide-in {
+    100% { transform: translateX(0%); opacity: 1; }
+}
+@-webkit-keyframes slide-in {
+    100% { -webkit-transform: translateX(0%);opacity: 1; }
+}  
+@keyframes slide-out {
+    0% { transform: translateX(0%); }
+    100% { transform: translateX(-100%); opacity: 0;}
+}
+@-webkit-keyframes slide-out {
+    0% { -webkit-transform: translateX(0%); }
+    100% { -webkit-transform: translateX(-100%);opacity: 0; }
+}
+.burgerMenu div {
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+.open div:nth-child(2) {
+    opacity: 0;
+    transform: scaleX(0);
+}
+.open div:nth-child(1) {
+    transform: translateY(6px) rotate(45deg);
+    transform-origin: 40% 50%;
+}
+.open div:nth-child(3) {
+    transform: translateY(-6px) rotate(-45deg);
+    transform-origin: 40% 20%;
+}
+.fadeInUp {
+    -webkit-animation: fadeInUp 1s forwards;
+    animation: fadeInUp 1s forwards;
+}
+.fadeInRight {
+    -webkit-animation: fadeInRight 1s forwards;
+    animation: fadeInRight 1s forwards;
+}
+@-webkit-keyframes fadeInRight {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(40px, 0px, 0);
+        transform: translate3d(40px, 0px, 0);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+    }
+@-webkit-keyframes fadeInUp {
+0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 40px, 0);
+    transform: translate3d(0, 40px, 0);
+}
+100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+}
+}
+.fadeInOut {
+    -webkit-animation: fadeInOut 1s forwards;
+    animation: fadeInOut 1s forwards;
+}
+@-webkit-keyframes fadeInOut {
+100% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 40px, 0);
+    transform: translate3d(0, 40px, 0);
+}
+0% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+}
+}
+.notFoundbg{
+    background-image: url('../public/carRent\ images/driftCar.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.slideShowbg {
+   
+    -webkit-animation: slideShowbg 5s forwards;
+    animation: slideShowbg 5s forwards;
+}
+@-webkit-keyframes slideShowbg {
+    0% {
+        -webkit-transform: scale(1.5) translate(-10%, 10%);
+        transform: scale(1.5) translate(-10%, 10%); 
+    }
+    100% {
+        -webkit-transform: scale(1) translate(0%,0%);
+transform: scale(1) translate(0%,0%); 
+    }
+    }
+.cover {
+        transition: background-image .5s ease-in-out;
+
+}
+ .project-date {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+    border-radius: 0 0 20px 0;
+    z-index: 2;
+    background: var(--bgColor) !important;
+}
+.right{
+position: absolute;
+left: unset;
+right: -50px;
+opacity: 0;
+top: -50px;
+border-radius: 0 0 0 45px ;
+width: 100px;
+height: 100px;
+line-height: 70px;
+text-align: center;
+z-index: 2;
+background: var(--bgColor) !important;
+
+
+}
+
+.project-date .br-left-top {
+    position: absolute;
+    top: 0px;
+    right: -20px;
+    -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+    line-height: 1;}
+.project-date .br-right-bottom {
+        position: absolute;
+        bottom: -20px;
+        left: 0px;
+        -webkit-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        transform: rotate(360deg);
+        line-height: 1;
+    }
+    .br-left-top svg,.br-right-bottom svg {
+        width: 20px;
+        height: 20px;
+    }
+    a.active{
+        color: var(--color-primary);
+    }
+.right .shap-left-top {
+    right: unset ;
+    left: -24px ;
+    position: absolute;
+
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+.right .shap-right-bottom{
+    position: absolute;
+    right: 0px !important;
+    left: unset;
+   
+    bottom: -24px;
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+.right.activePlan{
+    top: 0!important;
+    right: 0 !important;
+    opacity: 1 !important;
+}
+    .navTitle:has(.active) {
+        color: var(--color-primary) !important; /* or any other style */
+      }
+
+
+
+
+
+
+      .advantagePrice:before {
+        content: '';
+        width: 4px;
+        height: 4px;
+        border-radius: 100%;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        background: #f5b754;
+    }
