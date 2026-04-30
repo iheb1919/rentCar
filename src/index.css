@@ -201,17 +201,17 @@ h4{
 }
 .fixedImg{
   padding: 120px  0;
-  background-image: url('../public/carRent\ images/slider/2.jpg');
+  background-image: url('/rentCar/carRent-images/slider/2.jpg');
   background-attachment: fixed;
   background-size: cover;
   width: 100%;
 }
 .fixedCarPromo{
-  background-image: url('../public/carRent\ images/slider/1.jpg');
+  background-image: url('/rentCar/carRent-images/slider/1.jpg');
 
 }
 .fixedRentNowContact{
-  background-image: url('../public/carRent\ images/slider/3.jpg');
+  background-image: url('/rentCar/carRent-images/slider/3.jpg');
 
 }
 .fixedImg2{

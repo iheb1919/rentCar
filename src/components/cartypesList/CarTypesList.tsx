@@ -1,4 +1,4 @@
-import React from 'react'
+ 
 import cartypes from '../../../carTypes.json'
 import Imageround from '../generals/imageRound/Imageround'
 import { ArrowDiagonalTopRight } from '../../icons/icons'
@@ -18,7 +18,7 @@ const CarTypesList = () => {
         >
         {cartypes && cartypes.map((type:string,i:number)=>
         <div className='min-h-[330px]'>
-            <Imageround key={i} image={`/carRent%20images/cars/0${Math.floor(Math.random() *6) + 1}.jpg`} 
+            <Imageround key={i} image={`/rentCar/carRent-images/cars/0${Math.floor(Math.random() *6) + 1}.jpg`} 
              button={ <Link className='z-10 w-full h-full flex justify-center items-center' to={`${type}/cars`} > <ArrowDiagonalTopRight/> </Link> } 
              btnstyle="
              bg-primary 

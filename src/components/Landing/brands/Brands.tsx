@@ -1,20 +1,20 @@
 import Slider from "react-slick";
 const Brands = () => {
     const slides=[
-        "/carRent%20images/clients/1.png",
-        "/carRent%20images/clients/2.png",
-        "/carRent%20images/clients/3.png",
-        "/carRent%20images/clients/4.png",
-        "/carRent%20images/clients/5.png",
-        "/carRent%20images/clients/6.png",
-        "/carRent%20images/clients/7.png",
-        "/carRent%20images/clients/1.png",
-        "/carRent%20images/clients/2.png",
-        "/carRent%20images/clients/3.png",
-        "/carRent%20images/clients/4.png",
-        "/carRent%20images/clients/5.png",
-        "/carRent%20images/clients/6.png",
-        "/carRent%20images/clients/7.png",
+        "/rentCar/carRent-images/clients/1.png",
+        "/rentCar/carRent-images/clients/2.png",
+        "/rentCar/carRent-images/clients/3.png",
+        "/rentCar/carRent-images/clients/4.png",
+        "/rentCar/carRent-images/clients/5.png",
+        "/rentCar/carRent-images/clients/6.png",
+        "/rentCar/carRent-images/clients/7.png",
+        "/rentCar/carRent-images/clients/1.png",
+        "/rentCar/carRent-images/clients/2.png",
+        "/rentCar/carRent-images/clients/3.png",
+        "/rentCar/carRent-images/clients/4.png",
+        "/rentCar/carRent-images/clients/5.png",
+        "/rentCar/carRent-images/clients/6.png",
+        "/rentCar/carRent-images/clients/7.png",
     ]
  
       const ssettings = {

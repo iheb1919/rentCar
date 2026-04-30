@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { useState, useEffect, useRef, useCallback, useLayoutEffect } from "react";
 type SelectListProps ={ text:any;
       icon:any;
@@ -18,7 +19,7 @@ const SelectList:React.FC<SelectListProps> = ({ text, icon,styles,classs }) => {
         }
     }, [open]); 
 
-    const MenuFloat = useRef(null);
+    const MenuFloat = useRef<HTMLDivElement>(null);
 
     // Scroll function with useCallback to prevent unnecessary re-creations
     const onscrollFn = useCallback(() => {
@@ -58,7 +59,8 @@ const SelectList:React.FC<SelectListProps> = ({ text, icon,styles,classs }) => {
             <div
                 ref={MenuFloat}
                 className={`${open ? "max-h-[350px]" : "max-h-0"} 
-                w-full transition-[max-height] duration-500 z-[13] absolute ${MenuFloat?.current?.getBoundingClientRect().bottom >= window.innerHeight ? "top-[unset] bottom-full" : "top-[110%]"} left-0  
+                w-full transition-[max-height] duration-500 z-[13] absolute 
+                ${MenuFloat?.current?.getBoundingClientRect().bottom >= window.innerHeight ? "top-[unset] bottom-full" : "top-[110%]"} left-0  
                 ${showScroll ? "overflow-y-auto" : "overflow-hidden"}`}
             >
                 {[...Array(7)].map((_, i) => (

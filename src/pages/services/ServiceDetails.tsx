@@ -1,10 +1,10 @@
-import React from 'react'
+ 
 import AboutHeader from '../../components/aboutHeader/AboutHeader'
 import PageFooter from '../../components/generals/pageFooter/PageFooter'
-import { CarInformation } from '../carDetail/CarDetail'
 import DetailsAnimated from '../../components/header/DetailsAnimated'
-import { HeavyCheckMark, CarDoor, SeatbeltFill, GearboxSquare, TravelLuggageAndBagsRounded, ThermometerHotLight, User20Solid, Whatsapp, ArrowDiagonalTopRight } from '../../icons/icons'
+import { HeavyCheckMark, ArrowDiagonalTopRight } from '../../icons/icons'
 import { whoAreWeTexttype } from '../../components/Landing/whoAreWe/WhoAreWe'
+import React from 'react'
 
 const ServiceDetails = () => {
   return (
@@ -12,7 +12,7 @@ const ServiceDetails = () => {
 
     <AboutHeader
             
-              background='url(/carRent%20images/slider/3.jpg'
+              background='url(/rentCar/carRent-images/slider/3.jpg'
                 headTitle="Services"
                 /* title={carName || ""} */
                 title="VIP Transfers"

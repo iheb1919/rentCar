@@ -26,7 +26,7 @@ const Footer = () => {
         <div className='grid grid-cols-3 max-md:grid-cols-1 rounded-xl '>
            <FooterElem 
            text="Rent a car imperdiet sapien porttito the bibenum ellentesue the commodo erat nesuen." 
-           title={<img className='w-[150px]' src="/carRent%20images/logo-light.png" alt=""/>} 
+           title={<img className='w-[150px]' src="/rentCar/carRent-images/logo-light.png" alt=""/>} 
            list={quickList2}
            />
            <FooterElem styles={{marginLeft:"50px"}} title="Quick Links" list={quickList} />

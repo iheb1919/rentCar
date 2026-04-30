@@ -1,5 +1,5 @@
-import React from 'react'
-import { ArrowDiagonalTopRight, Play, Whatsapp } from '../../../icons/icons'
+ 
+import { ArrowDiagonalTopRight,  Whatsapp } from '../../../icons/icons'
 
 const RentNowContact = () => {
   return (

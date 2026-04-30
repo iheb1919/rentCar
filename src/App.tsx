@@ -2,6 +2,8 @@
 import './App.css'
 import Navbar from './components/navbar/Navbar'
 import { createBrowserRouter, createRoutesFromElements, Navigate, Outlet, Route, RouterProvider, useNavigation } from 'react-router'
+import { AnimatePresence } from 'framer-motion'
+import PageTransition from './components/animations/PageTransition'
 import { ErrorBoundary } from 'react-error-boundary'
 import ErrorBoundryC from './components/errorBoundry/ErrorBoundry'
 import Landing from './pages/landing/Landing'
@@ -40,92 +42,97 @@ import SingleBlog from './pages/blog/SingleBlog'
 export const AppOutlet = () => {
   const navigation = useNavigation();
   const isNavigating = Boolean(navigation.location);
-  return  (
+  return (
     <>
-   
-     
-    <ScrollRestoration/>
+
+
+      <ScrollRestoration />
       {isNavigating && <div className='fixed z-50 bg-amber-950 left-0 top-0 w-full h-full' >WAITINH</div>}
-      <Navbar/>
-      <Outlet />
+      <Navbar />
+      <AnimatePresence mode="wait">
+        {/* <PageTransition key={location.pathname}> */}
+        <Outlet />
+        {/* </PageTransition> */}
+      </AnimatePresence>
     </>
   );
 };
 function App() {
   const router = createBrowserRouter(
     createRoutesFromElements(
-     <>
-      <Route path="/" 
-      errorElement={<ErrorBoundary FallbackComponent={ErrorBoundryC}>
-      </ErrorBoundary>}
-      element={<ErrorBoundary FallbackComponent={ErrorBoundryC}><AppOutlet /></ErrorBoundary>} >
+      <>
+        <Route path="/"
+          errorElement={<ErrorBoundary FallbackComponent={ErrorBoundryC}>
+          </ErrorBoundary>}
+          element={<ErrorBoundary FallbackComponent={ErrorBoundryC}><AppOutlet /></ErrorBoundary>} >
           <Route index path="/" element={<Navigate to="/home" />} />
-          <Route  path="/home" element={<Landing />} />
+          <Route path="/home" element={<Landing />} />
           <Route path="/slide2" element={<LAndingSlide2 />} />
-            <Route path="image1" element={<LandingImage1 />} />
-            <Route path="slideShow" element={<LandingSlideShow />} />
-            <Route path="image2" element={<LandingImage2 />} />
+          <Route path="/image1" element={<LandingImage1 />} />
+          <Route path="/slideShow" element={<LandingSlideShow />} />
+          <Route path="/image2" element={<LandingImage2 />} />
           {/* About */}
-          <Route path="about" element={<About />} />
+          <Route path="/about" element={<About />} />
           {/* Teams */}
-          <Route path="our_team" element={<Outlet />} >
-          <Route index element={<OurTeamPage />} />
-          <Route path="detail" element={<DetailTeamPage />} />
+          <Route path="/our_team" element={<Outlet />} >
+            <Route index element={<OurTeamPage />} />
+            <Route path="detail" element={<DetailTeamPage />} />
           </Route>
           {/* Contact */}
-          <Route path="contact" element={<ContactPage />} />
+          <Route path="/contact" element={<ContactPage />} />
           {/* Cars  */}
-         <Route path='all_cars' element={<Outlet />} >
-         <Route index element={<CarsFleet />} />
-         <Route path='model2' element={<CarsFleetModel2 />} />
-         <Route path='model3' element={<CarsFleetModel3 />} />
-         <Route path='car/:carId' element={<CarDetail />} />
-         <Route path='listing' element={<Outlet />} >
-         <Route index element={<CarsListing />} />
-         <Route path='car/:carId' element={<CarDetail />} />
+          <Route path='/all_cars' element={<Outlet />} >
+            <Route index element={<CarsFleet />} />
+            <Route path='model2' element={<CarsFleetModel2 />} />
+            <Route path='model3' element={<CarsFleetModel3 />} />
+            <Route path='car/:carId' element={<CarDetail />} />
+            <Route path='listing' element={<Outlet />} >
+              <Route index element={<CarsListing />} />
+              <Route path='car/:carId' element={<CarDetail />} />
 
-         </Route>
-         </Route>
+            </Route>
+          </Route>
 
-         <Route path="car_types" element={<Outlet />}>
-          <Route index element={<CarTypes />} />
-          <Route path=':carType/cars' element={<CarsFleet />} />
-          <Route path=':carType/cars/:carId' element={<CarDetail />} />
-         </Route>
+          <Route path="/car_types" element={<Outlet />}>
+            <Route index element={<CarTypes />} />
+            <Route path=':carType/cars' element={<CarsFleet />} />
+            <Route path=':carType/cars/:carId' element={<CarDetail />} />
+          </Route>
 
 
-         {/* Services */}
-         <Route path='services01' element={<Services01 />} />
-         <Route path='services02' element={<Services02 />} />
-         <Route path='services_detail' element={<ServiceDetails />} />
+          {/* Services */}
+          <Route path='/services01' element={<Services01 />} />
+          <Route path='/services02' element={<Services02 />} />
+          <Route path='/services_detail' element={<ServiceDetails />} />
           {/* PAges */}
 
-         <Route path='imagegallery' element={<Outlet />} >
-          <Route path='grid' element={<ImageGallery_Grid />} />
-          <Route path='mansory' element={<ImageGallery_Mansory />} />
-         </Route>
-         <Route path='video_gallery' element={<VideoGallery />} />
-         <Route path='pricing' element={<Pricing />} />
-         <Route path='faq' element={<Faq />} />
-         <Route path='testiominals' element={<Testiominals />} />
-         <Route path='not_found' element={<NotFound404 />} />
-         {/* BLOG */}
-         <Route path='blog' element={<Outlet />} >
-          <Route index element={<Blog />} />
-          <Route path='blog2' element={<Blog2 />} />
-          <Route path='blog_list' element={<BlogList />} />
-          <Route path='singleblog' element={<SingleBlog />} />
-         </Route>
+          <Route path='/imagegallery' element={<Outlet />} >
+            <Route path='grid' element={<ImageGallery_Grid />} />
+            <Route path='mansory' element={<ImageGallery_Mansory />} />
+          </Route>
+          <Route path='/video_gallery' element={<VideoGallery />} />
+          <Route path='/pricing' element={<Pricing />} />
+          <Route path='/faq' element={<Faq />} />
+          <Route path='/testiominals' element={<Testiominals />} />
+          <Route path='/not_found' element={<NotFound404 />} />
+          {/* BLOG */}
+          <Route path='/blog' element={<Outlet />} >
+            <Route index element={<Blog />} />
+            <Route path='blog2' element={<Blog2 />} />
+            <Route path='blog_list' element={<BlogList />} />
+            <Route path='singleblog' element={<SingleBlog />} />
+          </Route>
 
-      </Route>
-        <Route path="/*" element={<NotFound404/> } />
-   
-     </>
-      )
+        </Route>
+        <Route path="/*" element={<NotFound404 />} />
+
+      </>
+    ),
+    { basename: import.meta.env.BASE_URL }
   );
   return (
     <>
-    <RouterProvider router={router}/>   
+      <RouterProvider router={router} />
     </>
   )
 }

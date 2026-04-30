@@ -1,12 +1,15 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { useEffect } from 'react'
 
 import Slider from 'react-slick';
-import { NextButton, PrevButton, usePrevNextButtons } from '../carFleet/azeaze'
 import { useDotButton } from '../carFleet/CarFleet'
 import useEmblaCarousel from 'embla-carousel-react'
-import React from 'react'
+ 
 import Imageround from '../../generals/imageRound/Imageround'
 import { ArrowDiagonalTopRight } from '../../../icons/icons'
+import React from 'react';
+import { Reveal } from '../../animations/Reveal';
 
 const RentalCarType = () => {
   return (
@@ -20,15 +23,15 @@ export default RentalCarType
 
 const CarType = ()=>{
     const images = [
-        { id: 1, src: '/carRent%20images/cars/02.jpg', text:"SUV" },
-        { id: 2, src: '/carRent%20images/cars/01.jpg', text:"Convertible" },
-        { id: 3, src: '/carRent%20images/cars/03.jpg', text:"Luxury Cars" },
-        { id: 4, src: '/carRent%20images/cars/04.jpg', text:"Sport Cars" },
-        { id: 5, src: '/carRent%20images/cars/05.jpg', text:"Sedan" },
-        { id: 5, src: '/carRent%20images/cars/06.jpg', text:"Small Cars" }
+        { id: 1, src: '/rentCar/carRent-images/cars/02.jpg', text:"SUV" },
+        { id: 2, src: '/rentCar/carRent-images/cars/01.jpg', text:"Convertible" },
+        { id: 3, src: '/rentCar/carRent-images/cars/03.jpg', text:"Luxury Cars" },
+        { id: 4, src: '/rentCar/carRent-images/cars/04.jpg', text:"Sport Cars" },
+        { id: 5, src: '/rentCar/carRent-images/cars/05.jpg', text:"Sedan" },
+        { id: 5, src: '/rentCar/carRent-images/cars/06.jpg', text:"Small Cars" }
       ];
-    const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true })
-    const [slidesInView, setSlidesInView] = React.useState<number[]>([]);
+    const [, emblaApi] = useEmblaCarousel({ loop: true })
+    const [, setSlidesInView] = React.useState<number[]>([]);
     const onSelect = React.useCallback(() => {
       if (!emblaApi) {
         return;
@@ -41,15 +44,19 @@ const CarType = ()=>{
           onSelect()
         }
       }, [emblaApi,onSelect])
-  const { selectedIndex } =useDotButton(emblaApi)
+  //const { selectedIndex } =useDotButton(emblaApi)
 
     return(
         <section className=' relative px-[12px] py-[120px] w-full flex flex-col gap-10 items-center'>
              <div className='relative  container  mx-auto flex flex-col items-center z-2'>
-                <p className="text-primary text-[10px] font-[300] tracking-[6px] inline-block mb-[15px] uppercase" >CATEGORIES</p>
-                <h4 className='font-bold text-[42px]'>Rental 
-                    <span className='text-primary' > Car Types</span>
-                </h4>
+                <Reveal>
+                  <p className="text-primary text-[10px] font-[300] tracking-[6px] inline-block mb-[15px] uppercase" >CATEGORIES</p>
+                </Reveal>
+                <Reveal>
+                  <h4 className='font-bold text-[42px]'>Rental 
+                      <span className='text-primary' > Car Types</span>
+                  </h4>
+                </Reveal>
             </div>
             <div className=' container'>
             <div className=' w-full mx-auto  max-w-[1200px] flex justify-center items-center flex-col gap-5 '>
@@ -69,7 +76,7 @@ const CarType = ()=>{
 
 
 
-export  const RentalCarTypeCarousel = ({button,images,textPosition}) => {
+export  const RentalCarTypeCarousel = ({button,images,textPosition}:any) => {
   const settings = {
     customPaging: function() {
         return (
@@ -104,7 +111,7 @@ export  const RentalCarTypeCarousel = ({button,images,textPosition}) => {
   return (
     <div className="w-full min-md:px-4">
       <Slider {...settings}>
-        {images.map((image) => (
+        {images.map((image:any) => (
           <div key={image.id} className="">
             <Imageround image={image.src}
             textPosition={textPosition}

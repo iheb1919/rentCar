@@ -1,4 +1,4 @@
-import React from 'react'
+ 
 import AboutHeader from '../../components/aboutHeader/AboutHeader'
 import PageFooter from '../../components/generals/pageFooter/PageFooter'
 import { PhoneCallSpeaker, MailCloseFill, LocationEmpty, Clock28Regular } from '../../icons/icons'
@@ -9,7 +9,7 @@ const ContactPage = () => {
 
     <AboutHeader
             position="center"
-              background='url(/carRent%20images/slider/4.jpg'
+              background='url(/rentCar/carRent-images/slider/4.jpg'
                 headTitle="Get in touch"
                 title="Contact"
                 highlightTitle='US'
@@ -21,7 +21,7 @@ const ContactPage = () => {
             <h1 className={` text-center text-[25px] leading-[1.25em] font-bold  mb-[15px]`}>Location</h1>
            
             <div className='w-full rounded-xl overflow-hidden mx-auto' >
-                <iframe width="100%" height="350" frameBorder="0" scrolling="no" marginHeight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=tunis%20+(Car%20Rental)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.gps.ie/collections/drones/">drones ireland</a></iframe></div>
+                <iframe width="100%" height="350"   src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=tunis%20+(Car%20Rental)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.gps.ie/collections/drones/">drones ireland</a></iframe></div>
           
 
         </div>

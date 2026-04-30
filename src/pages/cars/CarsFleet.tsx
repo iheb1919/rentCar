@@ -13,7 +13,7 @@ const CarsFleet = () => {
 
 <AboutHeader
         position="center"
-          background='url(/carRent%20images/slider/3.jpg'
+          background='url(/rentCar/carRent-images/slider/3.jpg'
             headTitle="select your car"
             title={carType || ""}
             highlightTitle="Car Fleet"
@@ -92,7 +92,7 @@ export const AllCars = () => {
                   <div className="relative cursor-pointer h-full w-full">
                     <div className="overflow-hidden rounded-lg h-fit relative z-1">
                       <img
-                        src="/carRent%20images/slider/7.jpg"
+                        src="/rentCar/carRent-images/slider/7.jpg"
                         className="w-full transition-all duration-300 hover:scale-105"
                       />
                     </div>

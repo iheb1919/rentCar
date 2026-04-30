@@ -1,7 +1,5 @@
-import React from 'react'
 import AboutHeader from '../../components/aboutHeader/AboutHeader'
 import PageFooter from '../../components/generals/pageFooter/PageFooter'
-import { FaqQuestion } from './Faq'
 import TextGrid, { CustomerName } from '../../components/generals/textRound/TextRound'
 import { testimonialsAvis } from '../../components/Landing/testimonials/Testimonials'
 
@@ -9,7 +7,7 @@ const Testiominals = () => {
   return (
     <div className=''>
     <AboutHeader
-               background='url(/carRent%20images/slider/4.jpg'
+               background='url(/rentCar/carRent-images/slider/4.jpg'
                  headTitle="Testimonials"
                  title="What Clients Say"
                  />

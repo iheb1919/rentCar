@@ -7,7 +7,7 @@ const ImageGallery_Grid = () => {
    <div className=''>
    <AboutHeader
             position="center"
-              background='url(/carRent%20images/slider/21.jpg'
+              background='url(/rentCar/carRent-images/slider/21.jpg'
                 headTitle="Our Portfolio"
                 title="Image Gallery"
                 />
@@ -23,17 +23,17 @@ export default ImageGallery_Grid
 
 export const ImageGalleryFilter = ()=>{
   const images=[
-    "/carRent%20images/gallery/1.jpg",
-    "/carRent%20images/gallery/2.jpg",
-    "/carRent%20images/gallery/3.jpg",
+    "/rentCar/carRent-images/gallery/1.jpg",
+    "/rentCar/carRent-images/gallery/2.jpg",
+    "/rentCar/carRent-images/gallery/3.jpg",
     
-    "/carRent%20images/gallery/4.jpg",
-    "/carRent%20images/gallery/5.jpg",
-    "/carRent%20images/gallery/6.jpg",
+    "/rentCar/carRent-images/gallery/4.jpg",
+    "/rentCar/carRent-images/gallery/5.jpg",
+    "/rentCar/carRent-images/gallery/6.jpg",
     
-    "/carRent%20images/gallery/7.jpg",
-    "/carRent%20images/gallery/8.jpg",
-    "/carRent%20images/gallery/9.jpg",
+    "/rentCar/carRent-images/gallery/7.jpg",
+    "/rentCar/carRent-images/gallery/8.jpg",
+    "/rentCar/carRent-images/gallery/9.jpg",
     
   ]
   const filters=[
@@ -55,7 +55,7 @@ export const ImageGalleryFilter = ()=>{
 
       </div>
       <div  className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  gap-4 '>
-        { images.map((arr,i)=><div className='cursor-pointer relative group rounded-lg overflow-hidden
+        { images.map((arr,i)=><div key={i} className='cursor-pointer relative group rounded-lg overflow-hidden
         
         '>
             <img src={`${arr}`} alt="" className=' transition-[scale] group-hover:scale-120 duration-500'/>

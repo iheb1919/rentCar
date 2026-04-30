@@ -2,18 +2,18 @@ import { useState, useEffect } from 'react'
 import { Link, useParams } from 'react-router'
 import AboutHeader from '../../components/aboutHeader/AboutHeader'
 import PageFooter from '../../components/generals/pageFooter/PageFooter'
-import { whoAreWeTexttype } from '../../components/Landing/whoAreWe/WhoAreWe'
+//import { whoAreWeTexttype } from '../../components/Landing/whoAreWe/WhoAreWe'
 import { usePagination } from '../../hooks/usePaginationControls'
 import {  Search, CarDoor, GearboxSquare, TravelLuggageAndBagsRounded, User20Solid, HeavyCheckMark } from '../../icons/icons'
 import allCars from '../../../car_rentals.json'
-import { AllCars, Cartype } from './CarsFleet'
+import {  Cartype } from './CarsFleet'
 const CarsListing = () => {
   return (
     <div className='z-50' >
 
     <AboutHeader
             
-              background='url(/carRent%20images/slider/11.jpg'
+              background='url(/rentCar/carRent-images/slider/11.jpg'
                 headTitle="Rent Now"
                 /* title={carName || ""} */
                 position='center'
@@ -151,7 +151,7 @@ export const CartypeC=({data}:{data:Cartype})=>{
   return(
     <div  className="  h-full cursor-pointer  w-full">
                       <div className='overflow-hidden   rounded-lg    '>
-                        <img src="/carRent%20images/slider/7.jpg" className="w-full  transition-all duration-300 hover:scale-105" />
+                        <img src="/rentCar/carRent-images/slider/7.jpg" className="w-full  transition-all duration-300 hover:scale-105" />
                       </div>
                      <div className=' z-2 p-7 w-full  rounded-lg 
                      bg-[var(--bgBox)]  '>
@@ -167,7 +167,7 @@ export const CartypeC=({data}:{data:Cartype})=>{
                           </div>
                           <div className='flex w-full justify-between items-center h-fit gap-2 mt-1' >
                                   <div className=' flex  gap-0'><span className='text-2xl font-bold text-primary'>$750</span><span className='text-sm font-light  text-[#555]'>/day</span></div>
-                                  <Link to={`car/${data.id}?${data.brand + data.model}`} className='rounded-4xl shrink-0  leading-0.5 px-6 py-6 text-black bg-primary hover:bg-black dark:hover:text-black hover:text-white dark:hover:bg-white 
+                                  <Link to={`car/${data.id}?${data?.brand as string + data?.model}`} className='rounded-4xl shrink-0  leading-0.5 px-6 py-6 text-black bg-primary hover:bg-black dark:hover:text-black hover:text-white dark:hover:bg-white 
                                   hover:-translate-y-2
                                   transition-[background-color,translate] duration-500' >Details</Link>
                           </div>

@@ -7,7 +7,7 @@ const Pricing = () => {
     <div className=''>
     <AboutHeader
              position="center"
-               background='url(/carRent%20images/slider/23.jpg'
+               background='url(/rentCar/carRent-images/slider/23.jpg'
                  headTitle="Pricing Plan"
                  title="Pricing Packages"
                  />
@@ -45,6 +45,7 @@ export const PricingPlan = () =>{
         {
           pricingplan.map((plan,i)=>
             <div
+            key={i}
           className={` p-[60px_45px] cursor-pointer overflow-hidden w-full h-fit group    relative 
             rounded-[20px_20px_20px_20px]
             bg-[var(--bgBox)] 
@@ -95,7 +96,7 @@ dark:hover:bg-white
 
               <ul>
                 {
-                  plan.advantages.map((adv,i)=><li className='font-light text-sm relative pl-5 my-4 text-[#999] advantagePrice' > {adv} </li>)
+                  plan.advantages.map((adv,i)=><li key={i} className='font-light text-sm relative pl-5 my-4 text-[#999] advantagePrice' > {adv} </li>)
                 }
               </ul>
     <div className={`text-sm flex flex-wrap gap-5  `} >

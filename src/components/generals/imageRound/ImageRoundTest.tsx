@@ -1,4 +1,5 @@
-import React from 'react'
+/* eslint-disable @typescript-eslint/no-explicit-any */
+ 
 import {  ImageRoundEffect } from '../../../icons/icons'
 type ImageroundProps = {
     button:any,

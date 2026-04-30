@@ -8,7 +8,7 @@ const CarTypes = () => {
       return (
         <div className='z-50' >
           <AboutHeader
-          background='url(/carRent%20images/slider/23.jpg'
+          background='url(/rentCar/carRent-images/slider/23.jpg'
             headTitle="Categories"
             title="Rental Car "
             highlightTitle="Types"

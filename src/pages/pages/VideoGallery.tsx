@@ -1,15 +1,14 @@
-import React, { useState } from 'react'
 import AboutHeader from '../../components/aboutHeader/AboutHeader'
 import PageFooter from '../../components/generals/pageFooter/PageFooter'
 import Imageround from '../../components/generals/imageRound/Imageround'
-import { ArrowDiagonalTopRight, Play } from '../../icons/icons'
+import { Play } from '../../icons/icons'
 
 const VideoGallery = () => {
   return (
     <div className=''>
     <AboutHeader
              position="center"
-               background='url(/carRent%20images/slider/21.jpg'
+               background='url(/rentCar/carRent-images/slider/21.jpg'
                  headTitle="Videos"
                  title="Video Gallery"
                  />
@@ -27,12 +26,12 @@ export default VideoGallery
 
 export const ImageGalleryFilter = ()=>{
   const images=[
-    "/carRent%20images/gallery/2.jpg",
-    "/carRent%20images/gallery/3.jpg",
+    "/rentCar/carRent-images/gallery/2.jpg",
+    "/rentCar/carRent-images/gallery/3.jpg",
     
-    "/carRent%20images/gallery/4.jpg",
-    "/carRent%20images/gallery/5.jpg",
-    "/carRent%20images/gallery/6.jpg",
+    "/rentCar/carRent-images/gallery/4.jpg",
+    "/rentCar/carRent-images/gallery/5.jpg",
+    "/rentCar/carRent-images/gallery/6.jpg",
     
    
     

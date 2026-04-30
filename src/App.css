@@ -46,6 +46,7 @@ input[type="submit"] {
     top: 100% !important;
     left:20%
 }
+
 .firstNav > li:last-child > ul {
     top: 100% !important;
     right:0%;
@@ -151,7 +152,7 @@ transition: translate .5s ease;
 }
 }
 .notFoundbg{
-    background-image: url('../public/carRent\ images/driftCar.jpeg');
+    background-image: url('/rentCar/carRent-images/driftCar.jpeg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

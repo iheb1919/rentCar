@@ -1,15 +1,15 @@
-import React from 'react'
+ 
 import AboutHeader from '../../components/aboutHeader/AboutHeader'
 import PageFooter from '../../components/generals/pageFooter/PageFooter'
 import { usePagination } from '../../hooks/usePaginationControls'
-import { ArrowDiagonalTopRight, Search } from '../../icons/icons'
+import {  Search } from '../../icons/icons'
 import { Link } from 'react-router'
 
 const BlogList = () => {
   return (
     <div className=''>
       <AboutHeader
-        background='url(/carRent%20images/slider/1.jpg'
+        background='url(/rentCar/carRent-images/slider/1.jpg'
         headTitle="Blog & News"
         title="Latest News"
         position='center'
@@ -37,7 +37,7 @@ export const ListBlogC = () => {
       title: "Documents required for car rental",
       type: "Rent A Car",
       text: "Lorem ipsum potenti fringilla pretium ipsum non blandit vivamus eget nisi non mi iaculis iaculis imperie quiseros sevin elentesque habitant morbi tristique senectus et netus et malesuada the fames ac turpis enesta mauris suscipit mis nec est farmen.",
-      img: "/carRent%20images/slider/5.jpg"
+      img: "/rentCar/carRent-images/slider/5.jpg"
 
     },
     {
@@ -45,7 +45,7 @@ export const ListBlogC = () => {
       title: "Rental cost of sport and other cars",
       type: "Cars",
       text: "Lorem ipsum potenti fringilla pretium ipsum non blandit vivamus eget nisi non mi iaculis iaculis imperie quiseros sevin elentesque habitant morbi tristique senectus et netus et malesuada the fames ac turpis enesta mauris suscipit mis nec est farmen.",
-      img: "/carRent%20images/slider/4.jpg"
+      img: "/rentCar/carRent-images/slider/4.jpg"
 
     },
     {
@@ -53,7 +53,7 @@ export const ListBlogC = () => {
       title: "Rental cars how to check driving fines?",
       type: "Battery",
       text: "Lorem ipsum potenti fringilla pretium ipsum non blandit vivamus eget nisi non mi iaculis iaculis imperie quiseros sevin elentesque habitant morbi tristique senectus et netus et malesuada the fames ac turpis enesta mauris suscipit mis nec est farmen.",
-      img: "/carRent%20images/slider/3.jpg"
+      img: "/rentCar/carRent-images/slider/3.jpg"
 
     },
 
@@ -121,21 +121,21 @@ export const ListBlogC = () => {
                 <div className='flex gap-4 font-light text-sm dark:text-[#999] text-black ' >
                   <div className='w-[130px] shrink-0 rounded-lg overflow-hidden'>
 
-                  <img src="/carRent%20images/slider/2.jpg" alt="" />
+                  <img src="/rentCar/carRent-images/slider/2.jpg" alt="" />
                   </div>
                   <p className='hover:text-primary cursor-pointer' >How to Rent a Car at the Airport Terminal?</p>
                 </div>
                 <div className='flex gap-4 font-light text-sm dark:text-[#999] text-black ' >
                   <div className='w-[130px] shrink-0 rounded-lg overflow-hidden'>
 
-                  <img src="/carRent%20images/slider/19.jpg" alt="" />
+                  <img src="/rentCar/carRent-images/slider/19.jpg" alt="" />
                   </div>
                   <p className='hover:text-primary cursor-pointer' >Penalties for violating the rules in rental cars</p>
                 </div>
                 <div className='flex gap-4 font-light text-sm dark:text-[#999] text-black ' >
                   <div className='w-[130px] shrink-0 rounded-lg overflow-hidden'>
 
-                  <img src="/carRent%20images/slider/1.jpg" alt="" />
+                  <img src="/rentCar/carRent-images/slider/1.jpg" alt="" />
                   </div>
                   <p className='hover:text-primary cursor-pointer' >How to check a car before renting?</p>
                 </div>

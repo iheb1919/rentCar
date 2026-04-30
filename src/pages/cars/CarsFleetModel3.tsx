@@ -14,7 +14,7 @@ const CarsFleetModel3 = () => {
 
 <AboutHeader
               position="center"
-              background='url(/carRent%20images/slider/3.jpg'
+              background='url(/rentCar/carRent-images/slider/3.jpg'
               headTitle="select your car"
 
               highlightTitle="Car Fleet" title={''}            />
@@ -77,7 +77,7 @@ export const AllCarsModel3 = ()=>{
                     group-hover:border-primary
                     text-white
                     group-hover:text-white"
-                    image="/carRent%20images/blog/6.jpg"
+                    image="/rentCar/carRent-images/blog/6.jpg"
                     sub_text={<div className="flex  gap-1">
                        
                         <div className="flex flex-wrap justify-center items-center gap-2 text-[#999] text-sm">
@@ -94,7 +94,7 @@ export const AllCarsModel3 = ()=>{
                           </div>
                           <div className="flex justify-center items-center gap-1">
                             <User20Solid className="text-primary" />{" "}
-                            <span>Age {2025 - image.year}</span>
+                            <span>Age {2025 - (image?.year as number )}</span>
                           </div>
                         </div>
                       </div>}

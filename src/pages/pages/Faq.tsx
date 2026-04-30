@@ -1,4 +1,3 @@
-import React from 'react'
 import AboutHeader from '../../components/aboutHeader/AboutHeader'
 import PageFooter from '../../components/generals/pageFooter/PageFooter'
 import DetailsAnimated from '../../components/header/DetailsAnimated'
@@ -8,7 +7,7 @@ const Faq = () => {
     <div className=''>
     <AboutHeader
              position="center"
-               background='url(/carRent%20images/slider/4.jpg'
+               background='url(/rentCar/carRent-images/slider/4.jpg'
                  headTitle="Frequently Asked Questions
 "
                  title="Popular Questions"
@@ -33,7 +32,7 @@ export const FaqQuestion = ()=>{
         
         </div>
         <div>
-          <img src="/carRent%20images/about2.png" alt="" />
+          <img src="/rentCar/carRent-images/about2.png" alt="" />
         </div>
         <div className=' flex flex-col gap-3'>
 

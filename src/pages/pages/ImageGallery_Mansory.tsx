@@ -1,5 +1,5 @@
 
-import React, { useState } from 'react'
+import { useState } from 'react'
 import AboutHeader from '../../components/aboutHeader/AboutHeader'
 import PageFooter from '../../components/generals/pageFooter/PageFooter'
 
@@ -8,7 +8,7 @@ const ImageGallery_Mansory = () => {
    <div className=''>
    <AboutHeader
             position="center"
-              background='url(/carRent%20images/slider/21.jpg'
+              background='url(/rentCar/carRent-images/slider/21.jpg'
                 headTitle="Our Portfolio"
                 title="Image Gallery"
                 />
@@ -24,17 +24,17 @@ export default ImageGallery_Mansory
 
 export const ImageGalleryFilter = ()=>{
   const images=[
-    "/carRent%20images/blog/8.jpg",
-    "/carRent%20images/gallery/6.jpg",
-    "/carRent%20images/gallery/8.jpg",
+    "/rentCar/carRent-images/blog/8.jpg",
+    "/rentCar/carRent-images/gallery/6.jpg",
+    "/rentCar/carRent-images/gallery/8.jpg",
     
-    "/carRent%20images/gallery/2.jpg",
-    "/carRent%20images/gallery/4.jpg",
-    "/carRent%20images/blog/9.jpg",
+    "/rentCar/carRent-images/gallery/2.jpg",
+    "/rentCar/carRent-images/gallery/4.jpg",
+    "/rentCar/carRent-images/blog/9.jpg",
     
-    "/carRent%20images/blog/7.jpg",
-    "/carRent%20images/gallery/3.jpg",
-    "/carRent%20images/gallery/7.jpg",
+    "/rentCar/carRent-images/blog/7.jpg",
+    "/rentCar/carRent-images/gallery/3.jpg",
+    "/rentCar/carRent-images/gallery/7.jpg",
     
   ]
   const filters=[
@@ -56,7 +56,7 @@ export const ImageGalleryFilter = ()=>{
 
       </div>
       <div  className=' columns-1 md:columns-2 lg:columns-3  gap-4 '>
-        { images.map((arr,i)=><div className='cursor-pointer relative group rounded-lg overflow-hidden
+        { images.map((arr)=><div className='cursor-pointer relative group rounded-lg overflow-hidden
         [:not(:first-child)]:mt-8
         '>
             <img src={`${arr}`} alt="" className=' transition-[scale] group-hover:scale-120 duration-500'/>

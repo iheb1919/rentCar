@@ -1,7 +1,7 @@
 type AboutHeaderProps = {
   position?:string, background?:string,headTitle:string,title:string,highlightTitle?:string,highlightTitleReverse?:boolean
 }
-const AboutHeader:React.FC<AboutHeaderProps> = ({highlightTitleReverse=false,background="url(/carRent%20images/slider/3.jpg)",headTitle="RENTAX",title,highlightTitle,position}) => {
+const AboutHeader:React.FC<AboutHeaderProps> = ({highlightTitleReverse=false,background="url(/rentCar/carRent-images/slider/3.jpg)",headTitle="RENTAX",title,highlightTitle,position}) => {
   return (
     <div style={
         {backgroundImage:background}

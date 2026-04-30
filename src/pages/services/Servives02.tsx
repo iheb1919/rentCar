@@ -7,12 +7,12 @@ import Imageround from '../../components/generals/imageRound/Imageround'
 
 const Services02 = () => {
     const textGrid = [
-        {src: '/carRent%20images/services/1.jpg', text:" Corporate Car Rental",btnText:"01" },
-        {src: '/carRent%20images/services/2.jpg',text:"Car Rental with Driver",btnText:"02" },
-        {src: '/carRent%20images/services/3.jpg',text:" Airport Transfer",btnText:"03" },
-        {src: '/carRent%20images/services/4.jpg',text:"Fleet Leasing",btnText:"04" },
-        {src: '/carRent%20images/services/5.jpg',text:"VIP Transfer",btnText:"05" },
-        {src: '/carRent%20images/services/6.jpg',text:"Private Transfer ",btnText:"06" },
+        {src: '/rentCar/carRent-images/services/1.jpg', text:" Corporate Car Rental",btnText:"01" },
+        {src: '/rentCar/carRent-images/services/2.jpg',text:"Car Rental with Driver",btnText:"02" },
+        {src: '/rentCar/carRent-images/services/3.jpg',text:" Airport Transfer",btnText:"03" },
+        {src: '/rentCar/carRent-images/services/4.jpg',text:"Fleet Leasing",btnText:"04" },
+        {src: '/rentCar/carRent-images/services/5.jpg',text:"VIP Transfer",btnText:"05" },
+        {src: '/rentCar/carRent-images/services/6.jpg',text:"Private Transfer ",btnText:"06" },
     ]
   return (
     <div className='z-50' >

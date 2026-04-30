@@ -1,13 +1,12 @@
-import { useEffect, useState } from "react";
-import { ArrowDiagonalTopRight, ArrowDropDownLine, BaselineCalendarMonth, CarDoor, GearboxSquare, HeavyCheckMark, TravelLuggageAndBagsRounded, User20Solid } from "../../icons/icons";
+import { ArrowDiagonalTopRight, ArrowDropDownLine, BaselineCalendarMonth, HeavyCheckMark } from "../../icons/icons";
 import List from "../generals/components/list/SelectList";
-type carsImageType = {
+export type carsImageType = {
   price?: number;
   name?: string;
   image: string;
 };
 function Image2() {
-  const carsImgs= "/carRent%20images/slider/25.jpg"
+  const carsImgs= "/rentCar/carRent-images/slider/25.jpg"
    const textList = [
     "Corporate Car Rental",
     "Car Rental with Driver",

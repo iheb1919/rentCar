@@ -1,4 +1,4 @@
-import React from 'react'
+ 
 import AboutHeader from '../../components/aboutHeader/AboutHeader'
 import PageFooter from '../../components/generals/pageFooter/PageFooter'
 import { useParams } from 'react-router'
@@ -19,7 +19,7 @@ const CarDetail = () => {
   { data?.id ? <>
     <AboutHeader
               position="center"
-                background='url(/carRent%20images/slider/3.jpg'
+                background='url(/rentCar/carRent-images/slider/3.jpg'
                   headTitle="select your car"
                   title={ carName || ""}
                   /* highlightTitle="Car Fleet" */
@@ -27,11 +27,10 @@ const CarDetail = () => {
                 <div className='h-[50px] z-2 relative -mt-5 w-[2px] bg-primary mx-auto ' ></div>
                 <CarInformation data={data}  />
   </> :<AboutHeader
-              position="center"
-                background='url(/carRent%20images/slider/3.jpg'
-                 /*  headTitle="select your car" */
-                  title="No Car Found"
-                  /* highlightTitle="Car Fleet" */
+          position="center"
+          background='url(/rentCar/carRent-images/slider/3.jpg'
+          /*  headTitle="select your car" */
+          title="No Car Found" headTitle={''}                  /* highlightTitle="Car Fleet" */
                   />
             }
           
@@ -76,13 +75,13 @@ export const CarInformation = ({data}:{data:Cartype})=>{
                     <h1 className='font-bold leading-6 mb-4 text-xl'>Image Gallery</h1>
                     <div className='grid grid-cols-1 md:grid-cols-3 gap-x-6 gap-y-2'>
                       <div className='overflow-hidden rounded-lg'>
-                      <img className='rounded-lg hover:scale-110  transition-all duration-500' src="/carRent%20images/cars/c7.jpg" alt="" />
+                      <img className='rounded-lg hover:scale-110  transition-all duration-500' src="/rentCar/carRent-images/cars/c7.jpg" alt="" />
                       </div>
                       <div className='overflow-hidden rounded-lg'>
-                            <img className='rounded-lg hover:scale-110  transition-all duration-500' src="/carRent%20images/cars/c8.jpg" alt="" />
+                            <img className='rounded-lg hover:scale-110  transition-all duration-500' src="/rentCar/carRent-images/cars/c8.jpg" alt="" />
                       </div> 
                       <div className='overflow-hidden rounded-lg'>
-                            <img className='rounded-lg hover:scale-110  transition-all duration-500' src="/carRent%20images/cars/c9.jpg" alt="" />
+                            <img className='rounded-lg hover:scale-110  transition-all duration-500' src="/rentCar/carRent-images/cars/c9.jpg" alt="" />
                       </div>
 
                     </div>

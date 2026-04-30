@@ -1,7 +1,6 @@
-import React from 'react'
+ 
 import AboutHeader from '../../components/aboutHeader/AboutHeader'
 import PageFooter from '../../components/generals/pageFooter/PageFooter'
-import { ContactPageForm } from '../contactPage/ContactPage'
 import { ArrowLeft, ArrowRight, GridIcon } from '../../icons/icons'
 import { Link } from 'react-router'
 
@@ -9,7 +8,7 @@ const SingleBlog = () => {
   return (
     <div className=''>
     <AboutHeader
-      background='url(/carRent%20images/slider/1.jpg'
+      background='url(/rentCar/carRent-images/slider/1.jpg'
       headTitle="Blog"
       title="Rental cost of sport and other cars"
      
@@ -27,8 +26,8 @@ const SingleBlog = () => {
         </p>
 
         <div className='grid grid-cols-1 lg:grid-cols-2 gap-4  mt-8'>
-            <img className='rounded-2xl' src="/carRent%20images/slider/1.jpg" alt="" />
-            <img className='rounded-2xl' src="/carRent%20images/slider/2.jpg" alt="" />
+            <img className='rounded-2xl' src="/rentCar/carRent-images/slider/1.jpg" alt="" />
+            <img className='rounded-2xl' src="/rentCar/carRent-images/slider/2.jpg" alt="" />
         </div>
       
 
@@ -38,7 +37,7 @@ const SingleBlog = () => {
 
            <div className='container py-[90px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-4' >
             <div className='flex gap-9 mb-10'>
-              <img className='rounded-full w-[90px] h-[90px]' src="/carRent%20images/team/2.jpg" alt="" />
+              <img className='rounded-full w-[90px] h-[90px]' src="/rentCar/carRent-images/team/2.jpg" alt="" />
                 <div className='flex flex-col gap-1'>
                     <span className=' font-bold text-lg'>Olivia Brown                       </span>
                   <span className='text-[#999] text-xs font-light '  >29 Dec 2025 </span>

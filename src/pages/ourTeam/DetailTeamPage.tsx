@@ -1,4 +1,4 @@
-import React from 'react'
+ 
 import AboutHeader from '../../components/aboutHeader/AboutHeader'
 import PageFooter from '../../components/generals/pageFooter/PageFooter'
 import { FooterElem, quickListType } from '../../components/Landing/footer/Footer'
@@ -16,19 +16,19 @@ function classNames(...classes: string[]) {
 }
 const DetailTeamPage = () => {
   const myteam:slideTextImages[] = [
-            { id: 1, src: '/carRent%20images/team/1.jpg', sub_text:"Sales Consultant",  text:"Dan Martin" },
-            { id: 2, src: '/carRent%20images/team/4.jpg', sub_text:"Sales Consultant",  text:"Emily Arla" },
-            { id: 3, src: '/carRent%20images/team/5.jpg', sub_text:"Sales Consultant",  text:"Olivia White" },
-            { id: 4, src: '/carRent%20images/team/2.jpg', sub_text:"Sales Department",  text:"Margaret Nancy" },
-            { id: 6, src: '/carRent%20images/team/6.jpg', sub_text:"Finance Department",  text:"Mia Jane" },
-            { id: 5, src: '/carRent%20images/team/3.jpg', sub_text:"Sales Consultant",  text:"Micheal Brown" }
+            { id: 1, src: '/rentCar/carRent-images/team/1.jpg', sub_text:"Sales Consultant",  text:"Dan Martin" },
+            { id: 2, src: '/rentCar/carRent-images/team/4.jpg', sub_text:"Sales Consultant",  text:"Emily Arla" },
+            { id: 3, src: '/rentCar/carRent-images/team/5.jpg', sub_text:"Sales Consultant",  text:"Olivia White" },
+            { id: 4, src: '/rentCar/carRent-images/team/2.jpg', sub_text:"Sales Department",  text:"Margaret Nancy" },
+            { id: 6, src: '/rentCar/carRent-images/team/6.jpg', sub_text:"Finance Department",  text:"Mia Jane" },
+            { id: 5, src: '/rentCar/carRent-images/team/3.jpg', sub_text:"Sales Consultant",  text:"Micheal Brown" }
           ];
   return (
     <div className='z-50' >
 
     <AboutHeader
             position="center"
-              background='url(/carRent%20images/slider/21.jpg'
+              background='url(/rentCar/carRent-images/slider/21.jpg'
                 headTitle="Sales Consultant"
                 title="Micheal Brown"
                 />
@@ -72,7 +72,7 @@ export const TeamMateResume = ()=>{
     <div className=' mx-auto container py-[90px] grid grid-cols-1 max-md:grid-cols-1 gap-y-10 lg:grid-cols-3 max-sm:px-5  '>
       <div className=' flex flex-col justify-center items-center'>
 
-        <img src="/carRent%20images/team/1.jpg" className='rounded-4xl' alt="" />
+        <img src="/rentCar/carRent-images/team/1.jpg" className='rounded-4xl' alt="" />
         <div className='mt-5 self-start'>
           <FooterElem 
                      list={quickList2}

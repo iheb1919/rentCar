@@ -9,7 +9,7 @@ const Blog2 = () => {
   return (
     <div className=''>
        <AboutHeader
-        background='url(/carRent%20images/slider/1.jpg'
+        background='url(/rentCar/carRent-images/slider/1.jpg'
         headTitle="Blog & News"
         title="Latest News"
         position='center'
@@ -38,7 +38,7 @@ export const BlogListComp = ({ }) => {
       title: "Documents required for car rental",
       blogger: "Olivia D.",
       comments: 5,
-      img: "/carRent%20images/blog/3.jpg"
+      img: "/rentCar/carRent-images/blog/3.jpg"
 
     },
     {
@@ -46,7 +46,7 @@ export const BlogListComp = ({ }) => {
       title: "Rental cost of sport and other cars",
       blogger: "Olivia D.",
       comments: 5,
-      img: "/carRent%20images/blog/4.jpg"
+      img: "/rentCar/carRent-images/blog/4.jpg"
 
     },
     {
@@ -54,7 +54,7 @@ export const BlogListComp = ({ }) => {
       title: "Rental cars how to check driving fines?",
       blogger: "Olivia D.",
       comments: 5,
-      img: "/carRent%20images/blog/5.jpg"
+      img: "/rentCar/carRent-images/blog/5.jpg"
 
     },
     {
@@ -62,7 +62,7 @@ export const BlogListComp = ({ }) => {
       title: "How to Rent a Car at the Airport Terminal?",
       blogger: "Olivia D.",
       comments: 5,
-      img: "/carRent%20images/blog/6.jpg"
+      img: "/rentCar/carRent-images/blog/6.jpg"
 
     },
     {
@@ -70,7 +70,7 @@ export const BlogListComp = ({ }) => {
       title: "Penalties for violating the rules in rental cars",
       blogger: "Olivia D.",
       comments: 5,
-      img: "/carRent%20images/blog/7.jpg"
+      img: "/rentCar/carRent-images/blog/7.jpg"
 
     },
     {
@@ -78,7 +78,7 @@ export const BlogListComp = ({ }) => {
       title: "How to check a car before renting?",
       blogger: "Olivia D.",
       comments: 5,
-      img: "/carRent%20images/blog/8.jpg"
+      img: "/rentCar/carRent-images/blog/8.jpg"
 
     },
   ]

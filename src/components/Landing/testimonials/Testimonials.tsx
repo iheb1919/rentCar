@@ -8,7 +8,7 @@ export const testimonialsAvis = [
         footer:{
             position:"customer",
             name:"Dan Martin",
-            img:'/carRent%20images/team/1.jpg',
+            img:'/rentCar/carRent-images/team/1.jpg',
             text:"Lorem posuere in miss drana en the nisan semere sceriun amiss etiam ornare in the miss drana is lorem fermen nunta urnase mauris in the interdum."
         }
     },
@@ -17,7 +17,7 @@ export const testimonialsAvis = [
         footer:{
             position:"customer",
             name:"Olivia Brown",
-            img:'/carRent%20images/team/4.jpg',
+            img:'/rentCar/carRent-images/team/4.jpg',
             text:"Lorem posuere in miss drana en the nisan semere sceriun amiss etiam ornare in the miss drana is lorem fermen nunta urnase mauris in the interdum."
         }
     },
@@ -26,7 +26,7 @@ export const testimonialsAvis = [
         footer:{
             position:"customer",
             name:"Emily Martin",
-            img:'/carRent%20images/team/6.jpg',
+            img:'/rentCar/carRent-images/team/6.jpg',
             text:"Lorem posuere in miss drana en the nisan semere sceriun amiss etiam ornare in the miss drana is lorem fermen nunta urnase mauris in the interdum."
         }
     },
@@ -35,7 +35,7 @@ export const testimonialsAvis = [
       footer:{
           position:"customer",
           name:"Robert Frank",
-          img:'/carRent%20images/team/3.jpg',
+          img:'/rentCar/carRent-images/team/3.jpg',
           text:"Lorem posuere in miss drana en the nisan semere sceriun amiss etiam ornare in the miss drana is lorem fermen nunta urnase mauris in the interdum."
       }
   },
@@ -44,7 +44,7 @@ export const testimonialsAvis = [
       footer:{
           position:"customer",
           name:"Jesica Mccury",
-          img:'/carRent%20images/team/2.jpg',
+          img:'/rentCar/carRent-images/team/2.jpg',
           text:"Lorem posuere in miss drana en the nisan semere sceriun amiss etiam ornare in the miss drana is lorem fermen nunta urnase mauris in the interdum."
       }
   },
@@ -53,7 +53,7 @@ export const testimonialsAvis = [
       footer:{
           position:"customer",
           name:"Evelyn Elena",
-          img:'/carRent%20images/team/5.jpg',
+          img:'/rentCar/carRent-images/team/5.jpg',
           text:"Lorem posuere in miss drana en the nisan semere sceriun amiss etiam ornare in the miss drana is lorem fermen nunta urnase mauris in the interdum."
       }
   },

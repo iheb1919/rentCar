@@ -1,19 +1,16 @@
-import useEmblaCarousel from "embla-carousel-react";
-import React, { useEffect } from "react";
-import { NextButton, PrevButton, usePrevNextButtons } from "../carFleet/azeaze";
-import { useDotButton } from "../carFleet/CarFleet";
-import { ArrowDiagonalTopRight, CarDoor, GearboxSquare, TravelLuggageAndBagsRounded, User20Solid } from "../../../icons/icons";
+import React from "react";
+import { ArrowDiagonalTopRight } from "../../../icons/icons";
 import Imageround from "../../generals/imageRound/Imageround";
 import Slider from 'react-slick';
 import { slideTextImages } from "../../ourTeam/OurTeam";
 
 const images:slideTextImages[] = [
-    { id: 1, src: '/carRent%20images/blog/7.jpg', text:"VIP Transfer" },
-    { id: 2, src: '/carRent%20images/blog/4.jpg', text:"Private Transfer" },
-    { id: 3, src: '/carRent%20images/blog/5.jpg', text:"Corporate Car Rental" },
-    { id: 4, src: '/carRent%20images/blog/8.jpg', text:"Car Rental with Driver" },
-    { id: 6, src: '/carRent%20images/blog/6.jpg', text:"Car Rental with Driver" },
-    { id: 5, src: '/carRent%20images/blog/3.jpg', text:"Airport Transfer" }
+    { id: 1, src: '/rentCar/carRent-images/blog/7.jpg', text:"VIP Transfer" },
+    { id: 2, src: '/rentCar/carRent-images/blog/4.jpg', text:"Private Transfer" },
+    { id: 3, src: '/rentCar/carRent-images/blog/5.jpg', text:"Corporate Car Rental" },
+    { id: 4, src: '/rentCar/carRent-images/blog/8.jpg', text:"Car Rental with Driver" },
+    { id: 6, src: '/rentCar/carRent-images/blog/6.jpg', text:"Car Rental with Driver" },
+    { id: 5, src: '/rentCar/carRent-images/blog/3.jpg', text:"Airport Transfer" }
   ];
 const OurBlog = () => {
  
@@ -54,6 +51,7 @@ const OurBlog = () => {
 export default OurBlog
 
 type RentalCarTypeCarouselProps={
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 button:any,
 images:slideTextImages[],
 textPosition:"top"| "bottom"

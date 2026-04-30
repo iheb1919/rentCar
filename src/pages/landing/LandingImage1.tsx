@@ -1,4 +1,4 @@
-import React from 'react'
+ 
 import PageFooter from '../../components/generals/pageFooter/PageFooter';
 import Image1 from '../../components/header/Image1';
 import OurBlog from '../../components/Landing/blog/Blog';
@@ -13,12 +13,12 @@ import WhoAreWe, { whoAreWeTexttype } from '../../components/Landing/whoAreWe/Wh
 
 const LandingImage1 = () =>{
     const OurServicesImages = [
-      { id: "01", src: '/carRent%20images/services/1.jpg', text:"VIP Transfer" },
-      { id: "02", src: '/carRent%20images/services/2.jpg', text:"Private Transfer" },
-      { id: "03", src: '/carRent%20images/services/3.jpg', text:"Corporate Car Rental" },
-      { id: "04", src: '/carRent%20images/services/4.jpg', text:"Car Rental with Driver" },
-      { id: "05", src: '/carRent%20images/services/5.jpg', text:"Airport Transfer" },
-      { id: "06", src: '/carRent%20images/services/6.jpg', text:"Airport Transfer" }
+      { id: "01", src: '/rentCar/carRent-images/services/1.jpg', text:"VIP Transfer" },
+      { id: "02", src: '/rentCar/carRent-images/services/2.jpg', text:"Private Transfer" },
+      { id: "03", src: '/rentCar/carRent-images/services/3.jpg', text:"Corporate Car Rental" },
+      { id: "04", src: '/rentCar/carRent-images/services/4.jpg', text:"Car Rental with Driver" },
+      { id: "05", src: '/rentCar/carRent-images/services/5.jpg', text:"Airport Transfer" },
+      { id: "06", src: '/rentCar/carRent-images/services/6.jpg', text:"Airport Transfer" }
     ];
     const  whoAreWeText:whoAreWeTexttype = {
         headerTitle:"Rentax",

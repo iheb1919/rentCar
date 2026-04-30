@@ -1,14 +1,14 @@
-import { useEffect, useState } from "react";
-import { ArrowDiagonalTopRight, ArrowDropDownLine, BaselineCalendarMonth, CarDoor, GearboxSquare, TravelLuggageAndBagsRounded, User20Solid } from "../../icons/icons";
+/* eslint-disable @typescript-eslint/no-explicit-any */
+import { ArrowDiagonalTopRight, ArrowDropDownLine, BaselineCalendarMonth } from "../../icons/icons";
 import List from "../generals/components/list/List";
 import SelectList from "../generals/components/list/SelectList";
-type carsImageType = {
+export type carsImageType = {
   price?: number;
   name?: string;
   image: string;
 };
 function Image1() {
-  const carsImgs= "/carRent%20images/slider/2.jpg"
+  const carsImgs= "/rentCar/carRent-images/slider/2.jpg"
    
 
   return (
@@ -66,9 +66,9 @@ export const Carspecs = ()=>{
                     <form  action="" className='image1Landing w-full grid grid-cols-2 gap-4'>       
                         <span className='rounded-3xl h-16 dark:bg-[#222] bg-white  relative col-span-2   '> <SelectList styles={{ marginBottom:"0px",backGroundColor:'red' }} text="ChooseCar Type" icon={<ArrowDropDownLine className='text-primary w-6 h-6'/>} /> </span>
                         <span className='rounded-3xl h-16 dark:bg-[#222] bg-white  relative max-md:col-span-2  col-span-1   '> <SelectList styles={{backGround:"transparent !important", marginBottom:"0px" }} text="Pick Up Location" icon={<ArrowDropDownLine className='text-primary w-6 h-6'/>} /> </span>
-                        <span className='rounded-3xl h-16 dark:bg-[#222] bg-white  relative max-md:col-span-2  col-span-1   '> <List styles={{backGround:"transparent !important", marginBottom:"0px" }} text="Pick Up Date" icon={<BaselineCalendarMonth className='text-primary w-4 h-4'/> } /> </span>
+                        <span className='rounded-3xl h-16 dark:bg-[#222] bg-white  relative max-md:col-span-2  col-span-1   '> <List styles={{ backGround: "transparent !important", marginBottom: "0px" }} text="Pick Up Date" icon={<BaselineCalendarMonth className='text-primary w-4 h-4' />} id={""} /> </span>
                         <span className='rounded-3xl h-16 dark:bg-[#222] bg-white  relative max-md:col-span-2  col-span-1   '> <SelectList styles={{backGround:"transparent !important", marginBottom:"0px" }} text="Drop Off Location" icon={<ArrowDropDownLine className='text-primary w-6 h-6'/>} /> </span>
-                        <span className='rounded-3xl h-16 dark:bg-[#222] bg-white  relative max-md:col-span-2  col-span-1   '> <List styles={{backGround:"transparent !important", marginBottom:"0px" }} text="Return Date" icon={<BaselineCalendarMonth className='text-primary w-4 h-4'/> } /> </span>
+                        <span className='rounded-3xl h-16 dark:bg-[#222] bg-white  relative max-md:col-span-2  col-span-1   '> <List styles={{ backGround: "transparent !important", marginBottom: "0px" }} text="Return Date" icon={<BaselineCalendarMonth className='text-primary w-4 h-4' />} id={""} /> </span>
 
           <button className= {` col-span-2 flex shrink-0 w-full justify-center items-center h-full
            cursor-pointer transition-all  hover:border-white
@@ -84,7 +84,7 @@ export const Carspecs = ()=>{
     )
 }
 
-const RoundIconText = ({icon,title,value}:any)=>{
+export const RoundIconText = ({icon,title,value}:any)=>{
     return(
 
         <div className='w-full py-4 border-b border-white/3 flex justify-between items-center gap-1'>

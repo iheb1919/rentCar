@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import {  useState } from "react";
 import { ArrowDiagonalTopRight } from "../../icons/icons";
 type carsImageType={
     price:number,
@@ -6,9 +6,9 @@ type carsImageType={
     image:string}
 function Slide1() {
     const carsImgs:carsImageType[]= [
-        {price:400, name:"Audi RS7 Sportback", image:"/carRent%20images/slider/11.jpg"},
-        {price:600, name:"Bently Bentayga", image:"/carRent%20images/slider/13.jpg"},
-        {price:900, name:"Rolls Royce", image:"/carRent%20images/slider/14.jpg"}
+        {price:400, name:"Audi RS7 Sportback", image:"/rentCar/carRent-images/slider/11.jpg"},
+        {price:600, name:"Bently Bentayga", image:"/rentCar/carRent-images/slider/13.jpg"},
+        {price:900, name:"Rolls Royce", image:"/rentCar/carRent-images/slider/14.jpg"}
     ]
     const [image,setImage]= useState(0)
   return (

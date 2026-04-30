@@ -2,13 +2,13 @@ import { Link } from 'react-router'
 import AboutHeader from '../../components/aboutHeader/AboutHeader'
 import PageFooter from '../../components/generals/pageFooter/PageFooter'
 import { usePagination } from '../../hooks/usePaginationControls'
-import { ArrowDiagonalTopRight, CommentIcon, User20Solid, UserAltLight } from '../../icons/icons'
+import { ArrowDiagonalTopRight, CommentIcon,  UserAltLight } from '../../icons/icons'
 
 const Blog = () => {
   return (
     <div className=''>
        <AboutHeader
-        background='url(/carRent%20images/slider/1.jpg'
+        background='url(/rentCar/carRent-images/slider/1.jpg'
         headTitle="Blog & News"
         title="Latest News"
       /> 
@@ -34,7 +34,7 @@ export const BlogListComp = ({ }) => {
       title: "Documents required for car rental",
       blogger: "Olivia D.",
       comments: 5,
-      img: "/carRent%20images/blog/03.jpg"
+      img: "/rentCar/carRent-images/blog/03.jpg"
 
     },
     {
@@ -42,7 +42,7 @@ export const BlogListComp = ({ }) => {
       title: "Rental cost of sport and other cars",
       blogger: "Olivia D.",
       comments: 5,
-      img: "/carRent%20images/blog/04.jpg"
+      img: "/rentCar/carRent-images/blog/04.jpg"
 
     },
     {
@@ -50,7 +50,7 @@ export const BlogListComp = ({ }) => {
       title: "Rental cars how to check driving fines?",
       blogger: "Olivia D.",
       comments: 5,
-      img: "/carRent%20images/blog/05.jpg"
+      img: "/rentCar/carRent-images/blog/05.jpg"
 
     },
     {
@@ -58,7 +58,7 @@ export const BlogListComp = ({ }) => {
       title: "How to Rent a Car at the Airport Terminal?",
       blogger: "Olivia D.",
       comments: 5,
-      img: "/carRent%20images/blog/06.jpg"
+      img: "/rentCar/carRent-images/blog/06.jpg"
 
     },
     {
@@ -66,7 +66,7 @@ export const BlogListComp = ({ }) => {
       title: "Penalties for violating the rules in rental cars",
       blogger: "Olivia D.",
       comments: 5,
-      img: "/carRent%20images/blog/01.jpg"
+      img: "/rentCar/carRent-images/blog/01.jpg"
 
     },
     {
@@ -74,7 +74,7 @@ export const BlogListComp = ({ }) => {
       title: "How to check a car before renting?",
       blogger: "Olivia D.",
       comments: 5,
-      img: "/carRent%20images/blog/02.jpg"
+      img: "/rentCar/carRent-images/blog/02.jpg"
 
     },
   ]

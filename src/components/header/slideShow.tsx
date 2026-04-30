@@ -1,11 +1,12 @@
-import  { act, Fragment, useEffect, useState } from 'react'
-import { ArrowDiagonalTopRight, CurrencyDollar, GearboxSquare } from '../../icons/icons'
+/* eslint-disable @typescript-eslint/no-explicit-any */
+import  {  useEffect, useState } from 'react'
+import { ArrowDiagonalTopRight, CurrencyDollar } from '../../icons/icons'
 
 const SlideShow = () => {
     const carsImgs:string[]= [
-        "/carRent%20images/slider/11.jpg",
-        "/carRent%20images/slider/13.jpg",
-        "/carRent%20images/slider/14.jpg"
+        "/rentCar/carRent-images/slider/11.jpg",
+        "/rentCar/carRent-images/slider/13.jpg",
+        "/rentCar/carRent-images/slider/14.jpg"
     ]
     const [image,setImage]= useState(0)
     const [selected,setSelected]= useState(1)

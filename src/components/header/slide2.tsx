@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import {  useState } from "react";
 import { ArrowDiagonalTopRight, CarDoor, GearboxSquare, TravelLuggageAndBagsRounded, User20Solid } from "../../icons/icons";
 type carsImageType = {
   price: number;
@@ -10,17 +10,17 @@ function Slide2() {
     {
       price: 750,
       name: "Bugatti Mistral W16",
-      image: "/carRent%20images/slider/1.jpg",
+      image: "/rentCar/carRent-images/slider/1.jpg",
     },
    {
       price: 600,
       name: "Bently Bentayga",
-      image: "/carRent%20images/slider/13.jpg",
+      image: "/rentCar/carRent-images/slider/13.jpg",
     },
     {
       price: 900,
       name: "Rolls Royce Cullinan",
-      image: "/carRent%20images/slider/12.jpg",
+      image: "/rentCar/carRent-images/slider/12.jpg",
     }, 
   ];
   const [image, setImage] = useState(0);
@@ -128,6 +128,7 @@ export const Carspecs = ({active}:{active:boolean})=>{
     )
 }
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 const RoundIconText = ({icon,title,value}:any)=>{
     return(
 

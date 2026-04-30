@@ -1,4 +1,3 @@
-import React from 'react'
 import AboutHeader from '../../components/aboutHeader/AboutHeader'
 import PageFooter from '../../components/generals/pageFooter/PageFooter'
 import  { slideTextImages } from '../../components/ourTeam/OurTeam'
@@ -8,19 +7,19 @@ import { Link } from 'react-router'
 
 const OurTeamPage = () => {
   const myteam:slideTextImages[] = [
-          { id: 1, src: '/carRent%20images/team/1.jpg', sub_text:"Sales Consultant",  text:"Dan Martin" },
-          { id: 2, src: '/carRent%20images/team/4.jpg', sub_text:"Sales Consultant",  text:"Emily Arla" },
-          { id: 3, src: '/carRent%20images/team/5.jpg', sub_text:"Sales Consultant",  text:"Olivia White" },
-          { id: 4, src: '/carRent%20images/team/2.jpg', sub_text:"Sales Department",  text:"Margaret Nancy" },
-          { id: 6, src: '/carRent%20images/team/6.jpg', sub_text:"Finance Department",  text:"Mia Jane" },
-          { id: 5, src: '/carRent%20images/team/3.jpg', sub_text:"Sales Consultant",  text:"Micheal Brown" }
+          { id: 1, src: '/rentCar/carRent-images/team/1.jpg', sub_text:"Sales Consultant",  text:"Dan Martin" },
+          { id: 2, src: '/rentCar/carRent-images/team/4.jpg', sub_text:"Sales Consultant",  text:"Emily Arla" },
+          { id: 3, src: '/rentCar/carRent-images/team/5.jpg', sub_text:"Sales Consultant",  text:"Olivia White" },
+          { id: 4, src: '/rentCar/carRent-images/team/2.jpg', sub_text:"Sales Department",  text:"Margaret Nancy" },
+          { id: 6, src: '/rentCar/carRent-images/team/6.jpg', sub_text:"Finance Department",  text:"Mia Jane" },
+          { id: 5, src: '/rentCar/carRent-images/team/3.jpg', sub_text:"Sales Consultant",  text:"Micheal Brown" }
         ];
   return (
     <div className='z-50' >
 
     <AboutHeader
             position="center"
-              background='url(/carRent%20images/slider/3.jpg'
+              background='url(/rentCar/carRent-images/slider/3.jpg'
                 headTitle="Sales Consultants"
                 title="Our Experts Team"
                 />
