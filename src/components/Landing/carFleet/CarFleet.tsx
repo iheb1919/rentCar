@@ -1,5 +1,6 @@
 import React, { ComponentPropsWithRef, useCallback, useEffect, useState } from 'react'
 import { Reveal } from '../../animations/Reveal'
+import LazyImage from '../../generals/image/LazyImage';
 
 import { CarDoor, GearboxSquare, TravelLuggageAndBagsRounded, User20Solid } from '../../../icons/icons';
 import useEmblaCarousel from 'embla-carousel-react';
@@ -91,7 +92,7 @@ const CarFleet = () => {
               <div key={i} className={`embla__slide h-full max-md:min-w-[830px]  flex items-center justify-center ${selectedIndex === i && "slick-current "} `}>
                 <div key={image.id} className="  relative cursor-pointer h-full w-full">
                   <div className='overflow-hidden shrink-0 rounded-lg h-full  relative z-1 '>
-                    <img src={image.src} className="w-full  transition-all duration-300 hover:scale-105" />
+                    <LazyImage src={image.src} className="w-full transition-all duration-300 hover:scale-105" />
                   </div>
                   <div className='relative z-2 carspecs mx-auto opacity-0 transition-opacity duration-[.3s]  rounded-lg tosp-[80%]  w-[90%] 
             -mt-14 max-lg:w-full max-lg:mt-0

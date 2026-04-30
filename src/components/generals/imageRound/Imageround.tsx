@@ -1,5 +1,6 @@
 import React from "react";
 import { ImageRoundEffect } from "../../../icons/icons";
+import LazyImage from "../image/LazyImage";
 type ImageroundProps = {
   button: any;
   buttonPosition?: "bottom" | "top";
@@ -22,52 +23,50 @@ const Imageround: React.FC<ImageroundProps> = ({
 }) => {
   return (
     <div
-      className={`cursor-pointer overflow-hidden w-full h-fit group    relative ${
-        buttonPosition === "top"
+      className={`cursor-pointer overflow-hidden w-full h-fit group    relative ${buttonPosition === "top"
           ? "rounded-[0px_20px_20px_20px]"
           : "rounded-[20px_20px_20px_0px]"
-      }`}
+        }`}
     >
       {buttonPosition === "top" && (
         <div className="  project-date">
           {textLeft}
           <div className="br-left-top">
-          <ImageRoundEffect />
+            <ImageRoundEffect />
           </div>
           <div className="br-right-bottom">
-          <ImageRoundEffect />
+            <ImageRoundEffect />
           </div>
         </div>
       )}
 
       {buttonPosition === "top" && <div className="image-fade"></div>}
       {image && (
-        <img
-          className="w-full rounded-[20px_20px_20px_0px] z-0 transition-[scale] duration-500  group-hover:scale-105"
+        <LazyImage
           src={image}
-          alt=""
+          alt="car image"
+          containerClassName="w-full"
+          className="w-full rounded-[20px_20px_20px_0px] z-0 transition-[scale] duration-500 group-hover:scale-105"
         />
       )}
       <div
         className={`z-2 absolute  w-[90px] h-[90px] flex justify-center items-center  
-           ${
-             buttonPosition === "bottom"
-               ? " bottom-0   left-0  bg-[var(--bgColor)]"
-               : "bg-transparent  top-[10px] right-[10px]"
-           }
+           ${buttonPosition === "bottom"
+            ? " bottom-0   left-0  bg-[var(--bgColor)]"
+            : "bg-transparent  top-[10px] right-[10px]"
+          }
             rounded-[0_40px_0_0]`}
       >
         <div
           style={typeof btnstyle === "object" ? btnstyle : undefined}
           className={`
-            ${
-              typeof btnstyle === "string"
-                ? btnstyle
-                : buttonPosition === "bottom"
+            ${typeof btnstyle === "string"
+              ? btnstyle
+              : buttonPosition === "bottom"
                 ? " border border-white "
                 : "group-hover:bg-primary border-primary group-hover:text-black "
             }
-              ${buttonPosition === "bottom" ? "h-[70px] w-[70px]":"h-[60px] w-[60px]"}
+              ${buttonPosition === "bottom" ? "h-[70px] w-[70px]" : "h-[60px] w-[60px]"}
             z-[6]
                transition-all 
                  flex justify-center items-center
@@ -92,13 +91,12 @@ const Imageround: React.FC<ImageroundProps> = ({
 
           <div
             className={`imageTitle  text-white flex flex-col
-                      ${
-                        textPosition === "top"
-                          ? "  !top-5 !pl-5 !p-0"
-                          : buttonPosition === "top"
-                          ? " !pl-5 "
-                          : "pl-15"
-                      } `}
+                      ${textPosition === "top"
+                ? "  !top-5 !pl-5 !p-0"
+                : buttonPosition === "top"
+                  ? " !pl-5 "
+                  : "pl-15"
+              } `}
           >
             <h4 className="inline-block !text-left"> {text}</h4>
             {sub_text && (

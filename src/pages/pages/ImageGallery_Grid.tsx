@@ -1,6 +1,7 @@
 import  { useState } from 'react'
 import AboutHeader from '../../components/aboutHeader/AboutHeader'
 import PageFooter from '../../components/generals/pageFooter/PageFooter'
+import LazyImage from '../../components/generals/image/LazyImage'
 
 const ImageGallery_Grid = () => {
   return (
@@ -58,7 +59,7 @@ export const ImageGalleryFilter = ()=>{
         { images.map((arr,i)=><div key={i} className='cursor-pointer relative group rounded-lg overflow-hidden
         
         '>
-            <img src={`${arr}`} alt="" className=' transition-[scale] group-hover:scale-120 duration-500'/>
+            <LazyImage src={`${arr}`} alt="" className=' transition-[scale] group-hover:scale-120 duration-500'/>
             <span className='absolute z-2 bottom-5 -left-50 group-hover:left-5  tarnsition-[left] duration-1000       ' > Car Name Here</span>
             <div className="bottom-fade"></div>
             </div>)
