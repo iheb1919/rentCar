@@ -1,5 +1,5 @@
 import React from 'react'
-import { BaselineStar, ImageRoundEffect, QuotesLeft } from '../../../icons/icons'
+import {  ImageRoundEffect } from '../../../icons/icons'
 type ImageroundProps = {
     button:any,
     buttonPosition?:"bottom" | "top",

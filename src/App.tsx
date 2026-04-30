@@ -1,6 +1,5 @@
 
 import './App.css'
-import useThemeMode from './hooks/useThemeHook'
 import Navbar from './components/navbar/Navbar'
 import { createBrowserRouter, createRoutesFromElements, Navigate, Outlet, Route, RouterProvider, useNavigation } from 'react-router'
 import { ErrorBoundary } from 'react-error-boundary'
@@ -53,7 +52,6 @@ export const AppOutlet = () => {
   );
 };
 function App() {
-  const {toggleMode}=useThemeMode()
   const router = createBrowserRouter(
     createRoutesFromElements(
      <>
